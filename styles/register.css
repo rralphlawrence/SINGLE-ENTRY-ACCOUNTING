@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+html{
+      overflow-x: hidden;
+}
+    :root{
+        font-size: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        --primary-pink:#70BC4B;
+        --blue: #233975;
+
+    }
+    body{
+        font-family: 'Montserrat' , sans-serif;
+        font-weight: 500;
+    }
+    .copy h2{
+         font-size: 2rem;
+        font-weight: 700;
+        color: #233975;
+    }
+    .copy p{
+        font-size: 1.2rem;
+       font-weight: 800;
+       color: var(--blue);
+       margin: 1rem;
+   }
+    a{
+        text-decoration: none;
+        color: var(--blue);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .copy-legal p{
+        font-size: 2rem;
+        font-size: 80%;
+        text-align: center;
+        
+    }
+    .split-screen{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        height: 200px;
+    }
+    .right , .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .right{
+        margin: 1rem;
+    }
+
+    .left{
+
+        background-image: linear-gradient(45deg, #85ffbe70 0%, #fffb7d4b 100%)  , url('../BGA_A.png');
+        background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+    
+    }
+.left .copy{
+    color: #fff;
+    text-align: center;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+
+}
+ 
+.sign h2{ 
+    font-size:1.6rem;
+}
+.left p{
+    font-weight: 400;
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right .copy p {
+    margin: 1.5em 0;
+}
+
+.right form{
+    width: 438px;
+}
+
+form input[type=text], input[type=email], input[type=password]{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border:1px solid #c4c4c4;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    outline: none;
+    box-sizing: border-box;
+} 
+form input:focus{
+  border: 1px solid var(--primary-pink);
+  
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    color: rgb(87, 87, 87);
+    
+
+}
+
+.input-container.password{
+    position: relative;
+
+}
+.input-container.name{
+    position: relative;
+
+}
+.input-container.success input{
+    border-color: #2ecc71;
+}
+.input-container.error input{
+    
+    border-color: #e74c3c;
+}
+.alert{
+    font-size: 1rem;
+    color: red;
+}
+
+.input-container small{
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 15px;
+    font-size: 10px;
+    color: #e74c3c;
+}
+.input-container.error small{
+    
+  
+   
+}
+
+.input-container.success i.bx-check-shield{
+   color: #2ecc71;
+   visibility: visible;
+
+}
+.input-container.error i.bx-error-alt{
+  
+    color: #e74c3c;
+   
+}
+
+
+.input-container.password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+    color: grey;
+
+
+}
+.input-container.name i{
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 16px;
+    color: grey;
+
+
+}
+
+.login-container{
+    text-align: center;
+}
+    .signup-btn{
+        display: block;
+        width: 100%;
+        background: var(--primary-pink);
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .signup-btn:hover{
+        opacity: 0.8;
+       background-color: #70BC4B;
+    }
+    @media screen and (min-width:900px){
+        .split-screen{
+            flex-direction: row;
+            height: 100vh;
+
+        }
+        .left , .right{
+            display: flex;
+            width: 50%;
+            height: auto;
+
+        }
+        
+    }
+    @media screen and (max-width:568px) {
+        .split-screen .left{
+            display: none;
+        }
+    }
+
+    /*ADD ADD HOUSE PROPERTIES*/
+
+    .large-container{
+     
+       width: 70vw;
+       display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 2rem auto;
+       
+    }
+
+    .form-container-1{
+          flex: 1;
+            margin: 1rem;
+    }
+    .form-container-2{
+        flex: 1;
+        margin: 1rem;
+    }
+    .form-con {
+      width: 100%;
+    }
+
+    @media screen and (max-width:600px) {
+       
+       
+        
+    }
+
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: nowrap;
+
+    }
+    .check p{
+        font-size: .8rem;
+    }
+
+    .terms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .terms a{
+        font-size: .8rem;
+        margin:0px 5px;
+    }
